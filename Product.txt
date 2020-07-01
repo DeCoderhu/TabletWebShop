@@ -1,0 +1,4 @@
+1;TB1234;tablet;GlassT MonoLight x3;Kinti használatra tervezve. A monochrome kijelzõnek köszönhetõen, mindig látható és olvasható.;8 col;;/img/mono_tablet.png;125000
+2;TB2345;tablet;GlassT FullColor x4K;4K felbontás és tökéletes színekkel. Multimédiás tartalmakhoz és játékhoz is ajánlott.;8 col;;/img/colour_tablet.png;359999
+3;TB3456;tablet;GlassT SmartPower x3;Törés-, vízálló valamint különleges bevonatának köszönhetõen nem karcolódik. Ipari használatra tervzve.;10;;/img/industrial_tablet.png;650000
+4;EP1234;accessory;GlassT Earphone;Vezeték nélküli fülhallgató a GlassT tabletekhez;;Fehér;/img/earphone.png;15000

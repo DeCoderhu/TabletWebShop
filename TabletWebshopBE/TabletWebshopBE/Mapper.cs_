@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.OleDb;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TabletWebshopBE
+{
+    public class Mapper
+    {     
+        public ProductBase GetProductBaseFromRecord(OleDbDataReader reader)
+        {
+            ProductBase product = null;
+
+            if (reader != null)
+            {
+                string type = String.Empty;
+
+                if (!reader.IsDBNull(reader.GetOrdinal("Type")))
+                    type = reader.GetString(reader.GetOrdinal("Type"));
+
+                if (type.Equals("tablet"))
+                {
+                    product = new ProductTablet();
+
+                    if (!reader.IsDBNull(reader.GetOrdinal("Size")))
+                        ((ProductTablet)product).Size = reader.GetString(reader.GetOrdinal("Size"));
+                }
+                else if (type.Equals("accessory"))
+                {
+                    product = new ProductAccessory();
+
+                    if (!reader.IsDBNull(reader.GetOrdinal("Color")))
+                        ((ProductAccessory)product).Color = reader.GetString(reader.GetOrdinal("Color"));
+                }
+
+
+                //-->COPY THIS PART
+
+                if (!reader.IsDBNull(reader.GetOrdinal("ID")))
+                    product.Id = reader.GetInt32(reader.GetOrdinal("ID"));
+
+                if (!reader.IsDBNull(reader.GetOrdinal("SKU")))
+                    product.SKU = reader.GetString(reader.GetOrdinal("SKU"));
+
+                product.Type = type;
+
+                if (!reader.IsDBNull(reader.GetOrdinal("Name")))
+                    product.Name = reader.GetString(reader.GetOrdinal("Name"));
+
+                if (!reader.IsDBNull(reader.GetOrdinal("Description")))
+                    product.Description = reader.GetString(reader.GetOrdinal("Description"));
+
+                if (!reader.IsDBNull(reader.GetOrdinal("Img")))
+                    product.Img = reader.GetString(reader.GetOrdinal("Img"));
+
+                //SET! IN ProductBase
+                if (!reader.IsDBNull(reader.GetOrdinal("Price")))
+                    product.Price = reader.GetDouble(reader.GetOrdinal("Price"));
+            }
+
+            return product;
+        }
+    }
+}

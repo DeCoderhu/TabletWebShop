@@ -1,0 +1,12 @@
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\TabletWebshopBE.exe.config
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\TabletWebshopBE.exe
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\TabletWebshopBE.pdb
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\obj\Debug\TabletWebshopBE.csprojAssemblyReference.cache
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\obj\Debug\TabletWebshopBE.csproj.CoreCompileInputs.cache
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\obj\Debug\TabletWebshopBE.exe
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\obj\Debug\TabletWebshopBE.pdb
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\ProductBO.dll
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\DAL.dll
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\ProductBO.pdb
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\bin\Debug\DAL.pdb
+C:\C_SHARP\TabletWebShop\TabletWebshopBE\TabletWebshopBE\obj\Debug\TabletWebshopBE.csproj.CopyComplete
