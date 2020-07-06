@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ProductDAO.cs" />
+    <Compile Include="Factory\ProductFactory.cs" />
     <Compile Include="Mapper\ProductMapper.cs" />
     <Compile Include="ProductAccessory.cs" />
     <Compile Include="ProductBase.cs" />

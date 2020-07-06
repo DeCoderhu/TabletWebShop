@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductBO
 {
-    public class ProductAccessory : ProductBase
+    internal class ProductAccessory : ProductBase
     {
         public string Color { get; set; }
 
@@ -15,7 +15,7 @@ namespace ProductBO
 
         }
 
-        public ProductAccessory(int id, string sku, string type, string name, string description, string color, string img, double price, int unit) : base(id, sku, type, name, description, img, price, unit)
+        public ProductAccessory(string sku, string type, string name, string description, string color, string img) : base(sku, type, name, description, img)
         {
             Color = color;
         }

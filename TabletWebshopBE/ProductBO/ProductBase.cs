@@ -36,16 +36,13 @@ namespace ProductBO
 
         }
 
-        public ProductBase(int id, string sku, string type, string name, string description, string img, double price, int unit)
+        public ProductBase(string sku, string type, string name, string description, string img)
         {
-            Id = id;
             SKU = sku;
             Type = type;
             Name = name;
             Description = description;
             Img = img;
-            _Price = price;
-            Unit = unit;
         }
 
         public virtual string BarCode()
@@ -57,6 +54,24 @@ namespace ProductBO
         {
             ProductDAO dao = new ProductDAO();
             return dao.Read(this);
+        }
+
+        public bool AddProduct()
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.Create(this);
+        }
+
+        public bool UpdateProduct()
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.Update(this);
+        }
+
+        public bool RemoveProduct()
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.Delete(this.Id);
         }
     }
 }

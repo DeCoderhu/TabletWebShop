@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductBO
 {
-    public class ProductTablet:ProductBase
+    internal class ProductTablet:ProductBase
     {
         public string Size { get; set; }
 
@@ -15,7 +15,7 @@ namespace ProductBO
 
         }
 
-        public ProductTablet(int id, string sku, string type, string name, string description, string size, string img, double price, int unit):base( id,  sku,  type,  name,  description,  img,  price,  unit)
+        public ProductTablet(string sku, string type, string name, string description, string size, string img):base(sku,  type,  name,  description,  img)
         {
             Size = size;
         }

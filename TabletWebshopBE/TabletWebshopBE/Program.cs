@@ -1,4 +1,5 @@
 ﻿using ProductBO;
+using ProductBO.Factory;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,8 +14,26 @@ namespace TabletWebshopBE
     {
         static void Main(string[] args)
         {
-            ProductBase product = new ProductBase();
+            ProductFactory productFactory = new ProductFactory();
+            ProductBase product = productFactory.GetProductTablet();
+
+            // ADD
+            // ProductBase product = productFactory.GetProductTablet("SKUTEST","tablet","Test","Test_desc","8col","testimg");
+            // product.AddProduct();
+
+            // GET
+            product.SKU = "TB1234";
             List<ProductBase> products = product.GetProducts();
+
+
+            // UPDATE
+            products[0].Description += "_UPD";
+            products[0].UpdateProduct();
+
+
+            // DELETE
+            products[0].RemoveProduct();
+           
 
             Console.ReadKey();
         }
